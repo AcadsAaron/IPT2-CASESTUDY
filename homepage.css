@@ -1,0 +1,313 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  main{
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  .bodyHomepage{
+    min-height:100vh;
+    background-color:#CDCFC0 ;
+  
+  }
+  
+  nav{
+    background-color: #C6B6A6FF
+    
+  }
+  
+  .logoHREF {
+    width:3rem;
+    height: 3.188rem;
+    position:absolute;
+    margin-left:-0.5rem;
+  }
+  .logo{
+    height: 2.5rem;
+    width: 3.6rem;
+  }
+  
+  nav ul{
+    width:100%;
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  
+  }
+  
+  nav li{
+    height:100px;
+  }
+  
+  nav a{
+    height:100%;
+    padding: 0 30px;
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  
+  a:link {
+    color: black;
+    font-family: aboreto;
+    text-decoration: none;
+  }
+  
+  
+  
+  a:visited {
+    color: rgb(16, 17, 16);
+  }
+  
+  a.current{
+    color:#636AE8;
+  }
+  
+  a:hover{
+    transition: 1s ease;
+    color:#636AE8;
+    
+  }
+  
+  .sidebar{
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:12rem;
+    z-index:999;
+    background-color:rgba(198, 182, 166,0.9);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter:blur(10px);
+    display:none; 
+    
+  }
+  .sidebar li{
+    width:100%;
+    
+  }
+  
+  .sidebar a{
+    width:100%;
+    
+  }
+  .menu-button{
+    display: none;
+  }
+  
+  #top{
+    font-size:3.125rem;
+    position: fixed;
+    top:90%;
+    left:50%;
+    cursor: pointer;
+    color:  #81A984FF;
+  }
+  
+  #top:hover{
+    color: rgb(57, 88, 59);
+  }
+  
+  main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto auto auto auto;
+  }
+  .imgAndDes{
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  flex-direction: row;
+  margin: 3rem auto auto auto;
+  }
+  
+  .imgAndDes .imgCon{
+    margin: auto auto auto auto;
+    width: 25rem;
+    height: 30rem;
+  }
+  
+  .imgAndDes .imgCon .homepagePic{
+  
+    width: 25rem;
+    height: 30rem;
+    padding-right: 1rem;
+  }
+  
+  .imgAndDes .description{
+  
+    margin: 1rem 5rem auto 4rem;
+    width: 35rem;
+    padding-right: 1rem;
+    }
+    
+  
+  .description h3 {
+  
+    font-family: Aboreto;
+    font-size: 2rem; 
+    line-height: 3rem; 
+    font-weight: 300; 
+    color: #171A1FFF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  
+  }
+  
+  .description h1 {
+  
+    font-family: Aboreto; 
+      font-size: 3rem; 
+      line-height: 3rem; 
+      font-weight: 500; 
+      color: #171A1FFF; 
+      margin-bottom: 0.5rem;
+  }
+  .description h5 {
+  
+    font-family: Aboreto; 
+      margin-top: 0rem;
+      font-size: 0.875rem;
+      font-weight: 300; 
+      color: #171A1FFF;
+      
+  }
+  
+  .description p{
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    font-family: Quattrocento;
+    font-size: 1.3rem; 
+    line-height: 2rem; 
+    font-weight: 400; 
+    color: #171A1FFF; 
+    text-align: justify;
+  }
+  
+  .description .button {
+    margin: 7rem auto 1rem 2rem;
+    width: 11.25rem; 
+    height: 3.125rem; 
+    padding: auto 0.75rem auto auto; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Aboreto; 
+    font-size: 2rem; 
+    line-height: 1.875rem; 
+    font-weight: 400; 
+    color: #323931FF; 
+    background: #F7F8F7FF; 
+    opacity: 1; 
+    border: none; 
+    border-radius: 0.75rem; 
+  }
+  main .button:hover {
+    cursor: pointer;
+    color: #323931FF; 
+    background: #DDE2DDFF; 
+  }
+  main .button:hover:active {
+    color: #323931FF; 
+    background: #C3CBC2FF; 
+  }
+  
+  .description .button:disabled {
+    opacity: 0.4; 
+  }
+  
+  
+  @media (min-width:360px) and (max-width: 630px){
+    .hide{
+      display:none;
+     }
+     .menu-button{
+      display:block;
+    }
+    nav ul{
+      width:100%;
+      list-style:none;
+      display:flex;
+      justify-content:flex-end;
+      align-items:center;
+    }
+    .imgAndDes{
+      max-width: 100%;
+      flex-direction: column;
+      }
+  
+      .imgAndDes .imgCon{
+        max-height: 100%;
+        margin: auto auto auto auto;
+        width: 20rem;
+        height: 25rem;
+      }
+      
+      .imgAndDes .imgCon .homepagePic{
+      
+        width: 20rem;
+        height: 25rem;
+        padding-right: 1rem;
+      }
+      
+      .imgAndDes  .description{
+      
+        margin: 1rem;
+        width: 20rem;
+        padding-right: 0rem;
+        align-items: center;
+        }
+        .description h3 { 
+          text-align: center;
+          line-height: 1.5rem;
+          font-family: Aboreto;
+          font-size: 2rem;
+        }
+        .imgAndDes  .description h1{
+          text-align: center;
+          line-height: 3.5rem;
+          font-family: Aboreto;
+        }
+        .imgAndDes  .description h5{
+          text-align: center;
+          width: 20rem;
+          font-family: Aboreto;
+          line-height: 1.5rem;
+        }
+        .description p{
+          margin-top: 2rem;
+          font-family: Quattrocento;
+          text-align: center;
+          justify-content: center;
+          width: 20rem;
+          padding: 0rem 1rem 0rem 1rem ;
+        }
+        .description .button {
+          font-family: Aboreto; 
+        }
+        .imgAndDes .description .button {
+            margin: 3rem auto 2rem 4.2rem;
+        }
+  }
