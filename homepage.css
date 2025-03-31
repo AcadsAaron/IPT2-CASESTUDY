@@ -53,7 +53,7 @@
     align-items:center;
   
   }
-  
+  /*Kindly allign the height of the navigation bar to the size of the logo*/ 
   nav li{
     height:100px;
   }
@@ -206,7 +206,7 @@
     color: #171A1FFF; 
     text-align: justify;
   }
-  
+  /*The font size is too big for its container*/
   .description .button {
     margin: 7rem auto 1rem 2rem;
     width: 11.25rem; 
