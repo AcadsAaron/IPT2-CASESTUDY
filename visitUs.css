@@ -113,12 +113,11 @@
     font-family: aboreto;
     font-size: 1.15rem;
 }
-
 .vl{
     border: 0.12rem solid black;
     margin-left: 5rem;
     margin-right: 5rem;
-    height: 27rem;
+    height: 50rem;
 }
 .specific-contact{
     margin-top: 2.5rem;
@@ -127,24 +126,11 @@
 #email{
     font-family: quattrocentro;
 }
-
 #fb, #ig, #twt, #linked{
   color: black;
   margin-left: 7.5rem;
   font-size: 1.25rem;
   transition: all 0.1s ease;
-}
-#fb:hover{
-  color: #636AE8;
-}
-#ig:hover{
-  color: #636AE8;
-}
-#twt:hover{
-  color: #636AE8;
-}
-#linked:hover{
-  color: #636AE8;
 }
 
 .about-container {
