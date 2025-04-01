@@ -113,6 +113,7 @@
     font-family: aboreto;
     font-size: 1.15rem;
 }
+/*Please fix the borders between Address, Contacts, and Social Media, they're too long*/
 .vl{
     border: 0.12rem solid black;
     margin-left: 5rem;
@@ -126,6 +127,7 @@
 #email{
     font-family: quattrocentro;
 }
+/*Change the color of the icons when hovered*/
 #fb, #ig, #twt, #linked{
   color: black;
   margin-left: 7.5rem;
