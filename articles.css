@@ -381,7 +381,7 @@
     padding: 0rem;
     margin: 1.5rem auto auto 2rem;
   }
-  
+  /*Please enhance and adjust the image size and container for better allignment presentation */
   .rectangle3 .imgCon{
     display:  flex;
     width: 25rem; 
